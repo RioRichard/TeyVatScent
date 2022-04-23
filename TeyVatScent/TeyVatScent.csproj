@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A96225A6-D5C4-4F5D-8602-11A7233CCDA3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TeyVatScent</RootNamespace>
+    <AssemblyName>TeyVatScent</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.42.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.42\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\DataContext.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Image\Amouage-Interlude-53.jpg" />
+    <Content Include="Image\Amouage-Overture.jpg" />
+    <Content Include="Image\Armaf-Club-de-Nuit-Man-Limited-Edition-Parfum-2.jpg" />
+    <Content Include="Image\Burberry-Her-Blossom-6.jpg" />
+    <Content Include="Image\Burberry-Her-London-Dream.jpg" />
+    <Content Include="Image\Burberry-Hero.jpg" />
+    <Content Include="Image\Chloe-Eau-de-Parfum.jpg" />
+    <Content Include="Image\Christian-Louboutin-Loubiluna-Intense.jpg" />
+    <Content Include="Image\Diesel-Fuel-For-Life-for-men.jpg" />
+    <Content Include="Image\Diesel-Spirit-Of-The-Brave-8.jpg" />
+    <Content Include="Image\Dior-Eau-Sauvage.jpg" />
+    <Content Include="Image\Dior-sauvage-elixir.jpg" />
+    <Content Include="Image\Florabotanica-Balenciaga-4.jpg" />
+    <Content Include="Image\Gucci-Guilty-Eau-Pour-Homme-3.jpg" />
+    <Content Include="Image\Gucci-Guilty-Pour-Femme-EDT.jpg" />
+    <Content Include="Image\Guerlain-Cherry-Blossom-Limited-2022.jpg" />
+    <Content Include="Image\Guerlain-Shalimar-Souffle-de-Parfum-4.jpg" />
+    <Content Include="Image\Hermes-Terre-dHermes-Eau-Intense-Vetiver-Gift-Set.jpg" />
+    <Content Include="Image\Kilian-A-Kiss-from-a-Rose.jpg" />
+    <Content Include="Image\Kilian-Angels-Share-Feat-French-Montana.jpg" />
+    <Content Include="Image\Kilian-Good-Girl-Gone-Bad-Paradise-Garden-Limited.jpg" />
+    <Content Include="Image\Kilian-Princess-Rose-De-Ma-7.jpg" />
+    <Content Include="Image\lancome-la-vie-est-belle-soleil-cristal-9.jpg" />
+    <Content Include="Image\louis-vuitton-city-of-stars-3.jpg" />
+    <Content Include="Image\Mad-et-Len-Red-Musc-4.jpg" />
+    <Content Include="Image\Maison-Francis-Kurkdjian-LHomme-A-La-Rose-1.jpg" />
+    <Content Include="Image\Marc-Jacobs-Daisy-Eau-So-Intense-4.jpg" />
+    <Content Include="Image\Marc-Jacobs-Perfect-Intense-5.jpg" />
+    <Content Include="Image\Masque-Milano-Russian-Tea.jpg" />
+    <Content Include="Image\Narciso-Rodriguez-Fleur-Musc-Florale-1.jpg" />
+    <Content Include="Image\Narciso-Rodriguez-For-Her-Eau-de-Toilette-5.jpg" />
+    <Content Include="Image\Roja-Enigma-Essence-De-Parfum-Pour-Femme.jpg" />
+    <Content Include="Image\Roja-Oceania-Limited-2-5.jpg" />
+    <Content Include="Image\Set-Yves-Saint-Laurent-Libre.jpg" />
+    <Content Include="Image\Son-Tom-Ford-Lip-Color-Limited-Edition-16-Scarlet-Rouge-Mau-Do-Thuan.jpg" />
+    <Content Include="Image\Tom-Ford-Orchid-Soleil.jpg" />
+    <Content Include="Image\Tom-Ford-Rose-De-Chine-5.jpg" />
+    <Content Include="Image\z3313083027998_048cbcb5d1d8c007c70295a20b74927e-min.jpg" />
+    <Content Include="Image\z3315677756831_1a5dfa5620a367d3beeeb4d574dfdfcf-min.jpg" />
+    <Content Include="Image\z3350175971036_4b73d7620b73be47a5255dc47ed4cee1-min.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
